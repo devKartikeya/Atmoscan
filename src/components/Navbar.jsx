@@ -7,7 +7,6 @@ const Navbar = () => {
                 shadow-md fixed top-0 z-50">
             <h1 className="text-xl sm:text-2xl text-white font-semibold tracking-wide">Atmoscan</h1>
         </nav>
-
     )
 }
 

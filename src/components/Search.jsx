@@ -30,7 +30,6 @@ const Search = ({ value, setValue, search, setSearch }) => {
                 Search
             </button>
         </div>
-
     )
 }
 export default Search
