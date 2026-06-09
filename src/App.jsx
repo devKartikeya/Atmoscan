@@ -13,7 +13,7 @@ const App = () => {
 
   const fetchWeather = async () => {
     try {
-      let res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiUrl}&q=${value}&aqi=no`);
+      let res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiUrl}&q=${value}&aqi=no`);
 
       let data = await res.json();
       setWeather(data.current);
