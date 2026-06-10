@@ -6,7 +6,7 @@ const Footer = () => {
         <footer
             className="w-full flex flex-col md:flex-row items-center justify-between px-6 py-6 
                  bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 
-                 shadow-md text-white z-50 gap-6 md:gap-0"
+                 shadow-md text-white z-50 gap-6 md:gap-0 border-t-2 border-white"
         >
             {/* Left Section */}
             <div className="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
@@ -40,7 +40,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-yellow-300 transition-colors duration-300"
                 >
-                    <FaGithub size={24} color='black'/>
+                    <FaGithub size={24} color='black' />
                 </a>
                 <a
                     href="https://linkedin.com/in/kartikeya-mishra-8199973a9"
@@ -48,7 +48,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-yellow-300 transition-colors duration-300"
                 >
-                    <FaLinkedin size={24} color='white'/>
+                    <FaLinkedin size={24} color='white' />
                 </a>
             </div>
         </footer>

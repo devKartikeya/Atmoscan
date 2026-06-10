@@ -6,11 +6,18 @@ const Search = ({ value, setValue, search, setSearch }) => {
         setSearch(value);
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter") {
+            handleSubmit();
+        }
+    }
+
     return (
         <div className="w-full flex items-center my-14 px-5 py-3 gap-3">
             <input
                 onChange={(e) => setValue(e.target.value)}
                 type="text"
+                onKeyDown={handleKeyDown}
                 placeholder="Search Location"
                 className="w-full sm:w-[70%] lg:w-[50%] h-12 px-4 rounded-2xl 
                border-2 border-blue-500 

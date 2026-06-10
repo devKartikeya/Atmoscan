@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar'
 import Search from './components/Search'
 import React, { useEffect, useState } from 'react'
-import { FaThermometerHalf, FaTint, FaCloud, FaWind, FaCompass, FaTachometerAlt, FaEye, FaSun, FaCloudRain, FaSnowflake, FaTemperatureHigh, FaCloudSun } from "react-icons/fa";
+import { FaThermometerHalf, FaTint, FaCloud, FaWind, FaCompass, FaTachometerAlt, FaEye, FaSun, FaCloudRain, FaSnowflake, FaTemperatureHigh, FaCloudSun, FaMoon } from "react-icons/fa";
 
 const App = () => {
   const apiUrl = import.meta.env.VITE_API;
@@ -48,7 +48,13 @@ const App = () => {
         <Card heading="Condition" value={weather ? weather.condition.text : "N/A"} icon={<FaCloud />} />
         <Card
           heading="Time of Day"
-          value={weather ? (weather.is_day ? "Day 🌞" : "Night 🌙") : "N/A"}
+          value={weather ? (weather.is_day ? "Day" : "Night") : "N/A"}
+          icon={weather ? (weather.is_day ? <FaSun /> : <FaMoon />) : null}
+        />
+        <Card
+          heading="Chance of Rain"
+          value={weather ? `${weather.chance_of_rain} %` : "N/A"}
+          icon={<FaCloudRain />}
         />
       </main>
       <Footer />
