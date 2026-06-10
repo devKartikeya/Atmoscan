@@ -10,7 +10,7 @@ const Card = ({ heading, value, icon }) => {
                 <h1 className="font-semibold text-xl sm:text-2xl">{heading}</h1>
                 <span className='text-orange-500'>{icon}</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-orange-500">{value}</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-orange-500">{value}</h1>
         </div>
 
     )
